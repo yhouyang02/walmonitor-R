@@ -61,11 +61,17 @@ ui <- page_sidebar(
   layout_columns(
     col_widths = c(7, 5),
     card(
-      card_header("Sales Mix Over Time"),
+      card_header(div(
+        "Weekly Sales Mix Over Time",
+        style = "font-size: 18px; font-weight: 600;"
+      )),
       plotOutput("sales_mix_plot")
     ),
     card(
-      card_header("Ranked Sales"),
+      card_header(div(
+        "Ranked Weekly Sales",
+        style = "font-size: 18px; font-weight: 600;"
+      )),
       plotOutput("ranked_bar_plot")
     )
   )
@@ -109,15 +115,16 @@ server <- function(input, output, session) {
       scale_y_continuous(labels = label_number(big.mark = ",")) +
       labs(
         x = "Week Start",
-        y = "Total Weekly Sales",
+        y = "Total Sales",
         fill = NULL
       ) +
-      theme_minimal(base_size = 18) + 
-        theme(
-            legend.position = "bottom",
-            axis.title = element_text(size = 18),
-            axis.text = element_text(size = 18)
-        )
+      theme_minimal(base_size = 18) +
+      theme(
+        legend.position = "bottom",
+        axis.title.x = element_text(size = 18, margin = margin(t = 12)),
+        axis.title.y = element_text(size = 18, margin = margin(r = 12)),
+        axis.text = element_text(size = 18)
+      )
   })
 
   output$ranked_bar_plot <- renderPlot({
@@ -149,14 +156,14 @@ server <- function(input, output, session) {
       geom_col(show.legend = FALSE) +
       scale_x_continuous(labels = label_number(big.mark = ",")) +
       labs(
-        x = "Total Weekly Sales",
+        x = "Total Sales",
         y = NULL
       ) +
-      theme_minimal(base_size = 16) + 
-        theme(
-            axis.title = element_text(size = 16),
-            axis.text = element_text(size = 16)
-        )
+      theme_minimal(base_size = 16) +
+      theme(
+        axis.title.x = element_text(size = 18, margin = margin(t = 12)),
+        axis.text = element_text(size = 16)
+      )
   })
 }
 
