@@ -31,6 +31,7 @@ ui <- page_sidebar(
     style = "font-size: 32px; font-weight: 700;"
   ),
   sidebar = sidebar(
+    width = 300,
     open = "open",
 
     # Control bar
