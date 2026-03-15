@@ -12,7 +12,7 @@ Click [here](https://yhouyang02-walmonitor-r.share.connect.posit.cloud/) to view
 
 You can also run the app locally by following the below instruction. This project repo is set up to easily reproduce the required dependencies with `renv`. We recommend [RStudio](https://posit.co/downloads/) for a smooth experience.
 
-1.  Make sure to have [R](https://www.r-project.org/) installed in your system before continuing. In your **terminal** verify your installation and version.
+1.  Make sure to have [R](https://www.r-project.org/) installed in your system before continuing. In your **terminal**,verify your installation and version.
 
     ``` bash
     R --version  # expect version 4.5.2 or higher
