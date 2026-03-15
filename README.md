@@ -24,10 +24,14 @@ You can also run the app locally by following the below instruction. This projec
     git clone https://github.com/yhouyang02/walmonitor-R.git
     ```
 
-3.  In your **terminal**, navigate to the project directory locally. **If you are using RStudio, open `walmonitor-R.Rproj` from the cloned repo instead.**
+3.  In your **terminal**, navigate to the project directory and activate **R console**. *If you are using RStudio, open `walmonitor-R.Rproj` from the cloned repo instead.*
 
     ``` bash
     cd walmonitor-R
+    ```
+
+    ``` bash
+    R
     ```
 
 4.  In **R console**, restore the `renv` environment (recommended). Alternatively, you can install each dependency directly.
@@ -53,3 +57,5 @@ You can also run the app locally by following the below instruction. This projec
     ```
 
 6.  The dashboard should load automatically. If not, check the console for the local URL (e.g., `http://127.0.0.1:3236`) and paste it to your web browser.
+
+7.  Click `Ctrl + C` to stop the app from your **R console**.
