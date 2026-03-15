@@ -10,7 +10,7 @@ This app is a simplified re-implementation of Walmonitor using [Shiny for R](htt
 
 Click [here](https://yhouyang02-walmonitor-r.share.connect.posit.cloud/) to view the latest stable release of this dashboard. You may need to adjust your browser zoom level to reach the best view.
 
-You can also run the app locally by following the below instruction. This project repo is set up to easily reproduce the required dependencies with `renv`. We recommend [RStudio](https://posit.co/downloads/) for a smooth experience. If you are usiung RStudio, open `walmonitor-R.Rproj` and continue from Step 4.
+You can also run the app locally by following the below instruction. This project repo is set up to easily reproduce the required dependencies with `renv`. We recommend [RStudio](https://posit.co/downloads/) for a smooth experience.
 
 1.  Make sure to have [R](https://www.r-project.org/) installed in your system before continuing. In your **terminal** verify your installation and version.
 
@@ -18,13 +18,13 @@ You can also run the app locally by following the below instruction. This projec
     R --version  # expect version 4.5.2 or higher
     ```
 
-2.  In your **terminal**, clone this repository:
+2.  In your **terminal**, clone this repository.
 
     ``` bash
     git clone https://github.com/yhouyang02/walmonitor-R.git
     ```
 
-3.  In your **terminal**, navigate to the project directory locally:
+3.  In your **terminal**, navigate to the project directory locally. **If you are using RStudio, open `walmonitor-R.Rproj` from the cloned repo instead.**
 
     ``` bash
     cd walmonitor-R
