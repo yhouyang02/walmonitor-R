@@ -30,7 +30,7 @@ You can also run the app locally by following the below instruction. This projec
     cd walmonitor-R
     ```
 
-4.  In **R console**, restore the `renv` environment (recommended). Alternatively, you can the install the R dependencies directly.
+4.  In **R console**, restore the `renv` environment (recommended). Alternatively, you can install each dependency directly.
 
     ``` R
     install.packages("renv")
