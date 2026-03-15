@@ -56,6 +56,6 @@ You can also run the app locally by following the below instruction. This projec
     shiny::runApp()
     ```
 
-6.  The dashboard should load automatically. If not, check the console for the local URL (e.g., `http://127.0.0.1:3236`) and paste it to your web browser.
+6.  The dashboard should load automatically. If not, check the console for a local URL (e.g., `http://127.0.0.1:3236`) and paste it to your web browser.
 
 7.  Click `Ctrl + C` to stop the app from your **R console**.
