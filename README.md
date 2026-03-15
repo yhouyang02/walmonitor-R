@@ -31,7 +31,7 @@ You can also run the app locally by following the below instruction. This projec
     ```
 
     ``` bash
-    R
+    R  # load R console
     ```
 
 4.  In **R console**, restore the `renv` environment (recommended). Alternatively, you can install each dependency directly.
